@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 12px;
+}
+.container{
+    width: 90%;
+    margin: 8px auto 0px;
+    text-align: center;
+}
+
+.search-box{
+    background-color: #EEEEEE;
+}
+
+.search-box input{
+    width: 22%;
+}
+
+button{
+    padding: 2px;
+}
+
+.b-float{
+    float: left
+}
+.box{
+    height: 73px;
+    padding: 10px;
+}
+.box-no-p{
+    height: 73px;
+}
+
+.box-35{
+    width: 35%;
+    background-color: #7EE5DA;
+}
+
+.box-25{
+    width: 25%;
+    background-color: #70CCC2;
+    font-size: 10px;
+}
+.box-40{
+    width: 39.8%;
+    background-color: #62B3AA;
+}
+
+.a-block{
+    display: block;
+}
+
+.bottom-boxes{
+    width: 100%;
+    padding-top: 1px;
+    background-color: white;
+}
+
+.mg-r{
+    margin-right: 0.1%;
+}
+.clearfix{
+    clear: both;
+}
+.mg-top-10{
+    margin-top: 10px;
+}
+
+.text-14{
+    font-size: 14px;
+}
