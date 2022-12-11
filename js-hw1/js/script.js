@@ -13,7 +13,7 @@ let doThis = ()=>{
     console.log(userName);
     let h2title = document.querySelector('#h2title');
     userName = userName.charAt(0).toUpperCase()+userName.slice(1);
-    h2title.innerHTML = `Hossy, ${userName}!, Welcome!`;
+    h2title.innerHTML = `Hellow, ${userName}!, Welcome!`;
     time();
 }
 
