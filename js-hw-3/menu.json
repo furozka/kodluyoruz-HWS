@@ -70,5 +70,21 @@
         "price": 3.99,
         "img": "https://www.justonecookbook.com/wp-content/uploads/2011/10/Dorayaki-New-500x400.jpg",
         "desc": "Red bean paste dessert, serving with honey."
+    },
+    {
+        "id": 10,
+        "title": "Dolma",
+        "category": "Turkey",
+        "price": 50,
+        "img": "https://i.lezzet.com.tr/images-xxlarge-recipe/pip-dolmasi-7e7aa970-8074-4d5c-9784-87c8c8f67467.jpg",
+        "desc": "Turkish dolma"
+    },
+    {
+        "id": 11,
+        "title": "Baklava",
+        "category": "Turkey",
+        "price": 50,
+        "img": "https://images.deliveryhero.io/image/fd-tr/LH/dltq-hero.jpg",
+        "desc": "Amazing dessert"
     }
 ]

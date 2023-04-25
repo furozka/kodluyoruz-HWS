@@ -26,11 +26,6 @@ let itemImg = (img) => {
     return itemImgDOM
 }
 
-let itemInfo = (info) => {
-    let itemInfoDOM = document.createElement("p");
-
-}
-
 let menuTitlePrice = (title, price) => {
     let menuTitleDOM = document.createElement("div")
     menuTitleDOM.classList = "menu-title"
@@ -107,6 +102,18 @@ let addMenuItem = (itemId, itemCategory) => {
                 newItem.append(menuInfoDOM)
                 menuRow.append(newItem);
                 console.log("category china added")
+            } else if (category == "Turkey" && itemCategory == "Turkey") {
+                let imgDOM = itemImg(img);
+                let menuInfoDOM = document.createElement("div")
+                menuInfoDOM.classList = "menu-info"
+                let menuTitleDOM = menuTitlePrice(title, price)
+                let menuTextDOM = menuText(desc)
+                menuInfoDOM.append(menuTitleDOM);
+                menuInfoDOM.append(menuTextDOM)
+                newItem.append(imgDOM);
+                newItem.append(menuInfoDOM)
+                menuRow.append(newItem);
+                console.log("category Turkey added")
             }
 
         } else {
@@ -134,11 +141,12 @@ let allEventListeners = () => {
     let koreaBtn = document.querySelector("#KoreaBtn")
     let japanBtn = document.querySelector("#JapanBtn")
     let chinaBtn = document.querySelector("#ChinaBtn")
+    let turkeyBtn = document.querySelector("#TurkeyBtn")
     allBtn.addEventListener("click", function () { showCategories("all") })
     koreaBtn.addEventListener("click", function () { showCategories("Korea") })
     japanBtn.addEventListener("click", function () { showCategories("Japan") })
     chinaBtn.addEventListener("click", function () { showCategories("China") })
-
+    turkeyBtn.addEventListener("click", function () { showCategories("Turkey") })
 }
 
 // İnitiation Function
@@ -148,6 +156,7 @@ let initiateApp = () => {
     addButton("Korea");
     addButton("Japan");
     addButton("China");
+    addButton("Turkey");
     menu.forEach(item => addMenuItem(item.id, item.category));
     allEventListeners();
 }
