@@ -58,7 +58,7 @@ function List({ todos, setTodos }) {
       <ul className="todo-list">
         {
           filteredTodo.map((todo, index) => {
-            return (<>
+            return (<div key={index}>
               {
                 todo.checked ?
                   (<li key={index} className="completed">
@@ -77,22 +77,25 @@ function List({ todos, setTodos }) {
                   </li>)
               }
 
-            </>)
+            </div>)
           })}</ul>
       <footer className="footer">
         <span className="todo-count">
-          <strong>{todos.filter((todo) => todo.checked === false).length}</strong>
-          items left
+          {
+            (todos.filter((todo) => todo.checked === false).length===0 ? <span>Nothing todo</span> : <span><strong>{todos.filter((todo) => todo.checked === false).length} </strong>
+            items left </span>)
+          }
+          
         </span>
 
         <ul className="filters">
-          <li>
+          <li key={65416}>
             <a onClick={() => setFilter("all")} name="all" href="#/" className={filter === "all" ? "selected" : ""}>All</a>
           </li>
-          <li>
+          <li key={84984}>
             <a onClick={() => setFilter("active")} name="active" href="#/" className={filter === "active" ? "selected" : ""}>Active</a>
           </li>
-          <li>
+          <li key={89498}>
             <a onClick={() => setFilter("completed")} name="completed" href="#/" className={filter === "completed" ? "selected" : ""}>Completed</a>
           </li>
         </ul>

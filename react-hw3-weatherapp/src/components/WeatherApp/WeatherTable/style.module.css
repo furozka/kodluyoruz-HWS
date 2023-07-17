@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bg{
+    background-color: rgb(12, 105, 119);
+    padding: 5px;
+}
+tr, td{
+    border: 1px groove rgb(12, 105, 119);
+    border-style: groove;
+}
+
+.dateTag{
+    display: flex;
+    justify-content: center;
+}
+
+.tempBox{
+    display: flex;
+    justify-content: space-between;
+    color: darkgray;
+
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.hrColor{
+    border-color: rgb(12, 105, 119);
+    color: rgb(12, 105, 119);
+    background-color: rgb(12, 105, 119);
+    opacity: 0.5;
+}
+
+

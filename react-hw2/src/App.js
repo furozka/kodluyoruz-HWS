@@ -14,8 +14,8 @@ function App() {
 
       <footer className="info">
         <p>Click to edit a todo no available yet</p>
-        <p>Homework <a href="#">Furkan Özkan</a></p>
-        <p>Part of <a href="#">ToDo</a></p>
+        <p>Homework <a href="http://localhost:3000/">Furkan Özkan</a></p>
+        <p>Part of <a href="http://localhost:3000/">ToDo</a></p>
       </footer>
     </div>
   );
